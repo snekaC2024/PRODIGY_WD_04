@@ -1,0 +1,179 @@
+/* General styles */
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    margin: 0;
+    padding: 0;
+    line-height: 1.8;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 2rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: orangered;
+    background: white;
+    border-radius: 5%;
+}
+
+#hero {
+    display: flex;
+    background: gray no-repeat center center/cover;
+    width: 120vh;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 80px;
+    border-radius: 4cap;
+    font-weight: 900;
+    font-size: larger;
+}
+
+.profile-icon {
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    border: #fff solid 7px;
+    border-radius: 60%;
+    background: url('profile.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Behind the text content */
+    animation: fadein 1.4s ease-in-out;
+    animation-name: fadein;
+}
+
+.hero-content h1 {
+    text-align: center;
+    animation: blinker 1s linear infinite;
+    animation-name: fadein;
+    width: 70vh;
+}
+
+.hero-content p {
+    text-align: center;
+    animation: blinker 1s linear infinite;
+    animation-name: fadein;
+    width: 70vh;
+}
+
+@keyframes blinker {
+    50%{
+        opacity: o;
+    }
+}
+
+section {
+    padding: 1rem;
+    max-width: 800px;
+    margin: auto;
+}
+#about h2 {
+    color:rgb(253, 3, 1);
+    padding-top: 110px;
+    animation-name: fadein;
+    animation: fadein 3.5s ease-in-out;
+    width: 70vh;
+}
+
+#about p{
+    display: flex;
+    animation:fadein 3.7s ease-in-out;
+}
+
+#projects h2 {
+    color:rgb(253, 3, 1);
+    animation: fadein 4.5s ease-in-out;
+    width: 70vh;
+}
+
+#projects {
+    animation: fadein 5s ease-in-out;
+}
+
+#contact h2 {
+    color:rgb(253, 3, 1);
+    animation: fadein 8.5s ease-in-out;
+}
+
+
+@keyframes fadein{
+    from {
+          opacity: 0; 
+    }
+    to {
+         opacity: 4;
+    }
+}
+
+.project1,.project2,.project3,.project4 {
+    width: 300px;
+    background: lightgray;
+    margin: 1rem 0;
+    padding: 1rem;
+}
+
+#projects h3{
+    color:rgba(174, 34, 186, 0.793);
+    text-transform: uppercase;
+}
+
+.project2{
+    margin-left: 500px;
+    margin-top: -400px;
+}
+
+.project4{
+    margin-left: 500px;
+    margin-top: -400px;
+}
+
+
+#projects h3:hover{
+    text-decoration: none;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 2px 0;
+    width: 100%;
+    bottom: 0;
+}
+
+#contact {
+    margin: 15px;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
